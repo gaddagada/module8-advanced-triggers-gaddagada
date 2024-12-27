@@ -28,7 +28,7 @@ Always ensure that your helper methods are bulk-safe to handle multiple records 
 */
 public with sharing class AccountHelper {
     
-    public void setTypeProspect(List<Account> accounts){
+    public static void setTypeProspect(List<Account> accounts){
         for(Account acc : accounts){
             if(acc.Type == null){
                 acc.Type = 'Prospect';
